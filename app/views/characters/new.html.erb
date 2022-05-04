@@ -1,0 +1,55 @@
+<%= form_for @character do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+<br>
+  <%= f.label :role %><br>
+  <%= f.select :role, ["Tank", "Healer", "DPS"] %>
+<br>
+  <%= f.label :desc %><br>
+  <%= f.text_area :desc %>
+<br><hr>
+  <%= f.label :logo_image %><br>
+  <%= f.text_field :logo_image %>
+<br>
+  <%= f.label :fullbody_image %><br>
+  <%= f.text_field :fullbody_image %>
+<br><hr>
+  <%= f.label :hp %><br>
+  <%= f.text_field :hp %>
+<br>
+  <%= f.label :shield %><br>
+  <%= f.text_field :shield %>
+<br><hr>
+  <%= f.label :weapon1 %><br>
+  <%= f.text_field :weapon1 %>
+<br>
+  <%= f.label :weapon2 %><br>
+  <%= f.text_field :weapon2 %>
+<br><hr>
+  <%= f.label :capacity1 %><br>
+  <%= f.text_field :capacity1 %>
+<br>
+  <%= f.label :capacity2 %><br>
+  <%= f.text_field :capacity2 %>
+<br>
+  <%= f.label :capacity3 %><br>
+  <%= f.text_field :capacity3 %>
+<br>
+  <%= f.label :capacity4 %><br>
+  <%= f.text_field :capacity4 %>
+<br>
+  <%= f.label :ultimate %><br>
+  <%= f.text_field :ultimate %>
+<br><hr>
+  <%= f.label :passive1 %><br>
+  <%= f.text_field :passive1 %>
+<br>
+  <%= f.label :passive2 %><br>
+  <%= f.text_field :passive2 %>
+<br>
+  <%= f.label :passiverole %><br>
+  <%= f.text_field :passiverole %>
+<br><hr>  
+
+  <%= f.submit %>
+<% end %>
